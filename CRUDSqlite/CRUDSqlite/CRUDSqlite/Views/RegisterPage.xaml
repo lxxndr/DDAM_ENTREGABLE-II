@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDSqlite.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="txtUsuario" Placeholder="Usuario" />
+        <Entry x:Name="txtNombre" Placeholder="Nombre real" />
+        <Entry x:Name="txtApellidoPaterno" Placeholder="Apellido Paterno" />
+        <Entry x:Name="txtApellidoMaterno" Placeholder="Apellido Materno" />
+        
+        <Entry x:Name="txtFechNac" Placeholder="Fecha de Nacimiento" />
+        <Entry x:Name="txtCelular" Placeholder="Celular" />
+        <Entry x:Name="txtNumDocumento" Placeholder="N° Documento" />
+
+        <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" />
+        <Entry x:Name="txtCContraseña" Placeholder="Confirmar contraseña" IsPassword="True" />
+        
+        <Entry x:Name="txtEmail" Placeholder="Email" />
+        
+        <Button x:Name="btnRegistrar" Text="Registrarse" Clicked="btnRegistrar_Clicked" />
+    </StackLayout>
+
+</ContentPage>

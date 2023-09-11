@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CRUDSqlite.ViewModels"
+             x:Class="CRUDSqlite.Views.PaqueteDetallePage">
+    <ContentPage.BindingContext>
+        <vm:PaquetesViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="DETALLES DEL PAQUETE"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Nombre del Paquete: "/>
+                <Entry Grid.Row="0" Grid.Column="1" Text="{Binding namePaqute}"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Uno del Paquete: "/>
+                <Entry Grid.Row="1" Grid.Column="1" Text="{Binding unoPaqute}"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Dos del Paquete: "/>
+                <Entry Grid.Row="2" Grid.Column="1" Text="{Binding dosPaqute}"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Tres del Paquete: "/>
+                <Entry Grid.Row="3" Grid.Column="1" Text="{Binding tresPaqute}"/>
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Fecha de Vencimiento: "/>
+                <Entry Grid.Row="4" Grid.Column="1" Text="{Binding fechaVenPaqute}"/>
+
+                <Label Grid.Row="5" Grid.Column="0" Text="Descripción del Paquete: "/>
+                <Entry Grid.Row="5" Grid.Column="1" Text="{Binding descripcionPaqute}"/>
+
+                <Label Grid.Row="6" Grid.Column="0" Text="Precio del Paquete: "/>
+                <Entry Grid.Row="6" Grid.Column="1" Text="{Binding precioPaqute}" Keyboard="Numeric"/>
+
+                <Button Grid.Row="8" Grid.Column="0" Text="Send Email" Command="{Binding SendEmailCommand}"/>
+                <Button Grid.Row="8" Grid.Column="1" Text="Clear Info" Command="{Binding ClearCommand}"/>
+
+                <StackLayout Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2">
+                    <Label Text="{Binding namePaqute, StringFormat='Nombre del Paquete: {0}'}"/>
+                    <Label Text="{Binding precioPaqute, StringFormat='Precio del Paquete: {0:N2}'}"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
