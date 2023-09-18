@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDSqlite.MainPage"
+             BackgroundColor="Transparent">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#fff" Offset="0.0" />
+                        <GradientStop Color="#fff" Offset="0.87" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+
+                <StackLayout >
+                    <Image Source="skynet_back.png" Aspect="AspectFit" HeightRequest="305" WidthRequest="500"/>
+
+                    <Frame CornerRadius="0">
+                        <Label Text="Registrate en Skynet Travel" HorizontalTextAlignment="Center" TextColor="Black" FontSize="25"/>
+                    </Frame>
+
+                    <Entry x:Name="txtUsuario" Placeholder="Usuario"/>
+                    <Entry x:Name="txtNombre" Placeholder="Nombre real" />
+                    <Entry x:Name="txtApellidoPaterno" Placeholder="Apellido Paterno" />
+                    <Entry x:Name="txtApellidoMaterno" Placeholder="Apellido Materno" />
+
+                    <Entry x:Name="txtFechNac" Placeholder="Fecha de Nacimiento" />
+                    <Entry x:Name="txtCelular" Placeholder="Celular" />
+                    <Entry x:Name="txtNumDocumento" Placeholder="N° Documento" />
+
+                    <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" />
+                    <Entry x:Name="txtCContraseña" Placeholder="Confirmar contraseña" IsPassword="True" />
+
+                    <Entry x:Name="txtEmail" Placeholder="Email" />
+                    <Button x:Name="btnRegistrar" Text="Registrarse" WidthRequest="144" CornerRadius="20"  Clicked="btnRegistrar_Clicked" />
+
+                    <Label VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    FontSize="Medium" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="¿Si ya tienes cuenta? " />
+                                <Span Text="Inicia Sesión" TextColor="#FF9393" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDSqlite.LoginPage"
+             BackgroundColor="Transparent">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#FFA294" Offset="0.0" />
+                    <GradientStop Color="#FFC9C9" Offset="0.87" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="15">
+
+                <Label Text="Todo para tu próxima escapada."
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    FontSize="Large" 
+                    TextColor="#ffff"/>
+
+                <Image Source="iconSkynet.png" Aspect="AspectFit" HeightRequest="280" HorizontalOptions="CenterAndExpand" />
+
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="15" WidthRequest="300">
+                    <StackLayout>
+                        <Label HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="Large">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Iniciar Sesión en " />
+                                    <Span Text="Skymet Travel!" TextColor="#FF9393" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Frame BackgroundColor="Transparent" CornerRadius="10" Padding="0" WidthRequest="272">
+                            <Entry x:Name="txtUsuario" Placeholder="🧝 Ingresa tu usuario" Style="{StaticResource EntryStyle}" HeightRequest="42" WidthRequest="272" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" />
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent"  CornerRadius="10" Padding="0" WidthRequest="272">
+                            <Entry x:Name="txtContraseña" Placeholder="🔒 Ingresa tu contraseña" IsPassword="True" Style="{StaticResource EntryStyle}" HeightRequest="42" WidthRequest="272" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue"/>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent" CornerRadius="10" Padding="0" WidthRequest="144">
+                            <Button x:Name="btnIniciar" CornerRadius="20" Text="Iniciar Sesión" Clicked="btnIniciar_Clicked" Style="{StaticResource ButtonStyle}" HeightRequest="40" WidthRequest="144" HorizontalOptions="CenterAndExpand" BackgroundColor="#CF7575" />
+                        </Frame>
+
+                        <Label VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       FontSize="Large" >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="¿No tienes una cuenta? " />
+                                    <Span Text="Registrate" TextColor="#FF9393" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                        <Label Text="¿Olvidó su contraseña?"
+                       VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        TextColor="#FF9393"
+                        FontSize="Large" >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

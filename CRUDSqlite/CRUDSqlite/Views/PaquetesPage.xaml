@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CRUDSqlite.Views"
+             x:Class="CRUDSqlite.Views.PaquetesPage"
+             BackgroundColor="Transparent">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#FFA294" Offset="0.0" />
+                    <GradientStop Color="#FFC9C9" Offset="0.87" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <StackLayout Margin="10">
+                <Label Text="Bienvenido a Paquetes"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+                <ListView ItemsSource="{Binding Paquetes}"
+                      SelectedItem="{Binding SelectedPaquete}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding namePaqute}"
+                                  Detail="{Binding descripcionPaqute, StringFormat='Descripción: {0}'}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+                <Button Text="Ver detalles del paquete seleccionado"
+                    Command="{Binding GoToDetailsCommand}"
+                    CommandParameter="{x:Type local:PaqueteDetallePage}"/>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

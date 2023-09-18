@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CRUDSqlite.ViewModels"
+             x:Class="CRUDSqlite.Views.ServicioDetallePage"
+             BackgroundColor="Transparent">
+    <ContentPage.BindingContext>
+        <vm:ServicioViewModel />
+    </ContentPage.BindingContext>
+
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#FFA294" Offset="0.0" />
+                    <GradientStop Color="#FFC9C9" Offset="0.87" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <StackLayout>
+                <Image Source="BarcelonaEspana.jpg" Aspect="AspectFit" HeightRequest="282" />
+
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Text="Pais: "/>
+                    <Entry Grid.Row="0" Grid.Column="1" Text="{Binding pais}"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Destino: "/>
+                    <Entry Grid.Row="1" Grid.Column="1" Text="{Binding destino}"/>
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="Fecha de Partida: "/>
+                    <Entry Grid.Row="2" Grid.Column="1" Text="{Binding fechaHoraPartida}"/>
+
+                    <Label Grid.Row="3" Grid.Column="0" Text="Detalles: "/>
+                    <Entry Grid.Row="3" Grid.Column="1" Text="{Binding detalles}"/>
+
+                    <Label Grid.Row="4" Grid.Column="0" Text="Hora de LLegada: "/>
+                    <Entry Grid.Row="4" Grid.Column="1" Text="{Binding fechaHoraLlegada}"/>
+
+                    <Label Grid.Row="5" Grid.Column="0" Text="Precio: "/>
+                    <Entry Grid.Row="5" Grid.Column="1" Text="{Binding precio}"/>
+
+
+                    <Button Grid.Row="7" Grid.Column="0" Text="Send Email" Command="{Binding SendEmailCommand}"/>
+                    <Button Grid.Row="7" Grid.Column="1" Text="Clear Info" Command="{Binding ClearCommand}"/>
+
+
+                    <StackLayout Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2">
+                        <Label Text="{Binding pais, StringFormat='Pais: {0}'}"/>
+                        <Label Text="{Binding destino, StringFormat='Destino: {0}'}"/>
+                        <Label Text="{Binding precio, StringFormat='Precio de Viaje: {0:N2}'}"/>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
