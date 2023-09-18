@@ -3,40 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CRUDSqlite.Views"
              x:Class="CRUDSqlite.Views.ServiciosPage"
-             BackgroundColor="Transparent">
-
+             BackgroundColor="Transparent"
+             Title="SKYNET TRAVEL">
     <ContentPage.Content>
-        <Grid>
-            <Grid.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#FFA294" Offset="0.0" />
-                    <GradientStop Color="#FFC9C9" Offset="0.87" />
-                </LinearGradientBrush>
-            </Grid.Background>
-
-            <StackLayout Margin="10">
-                <Label Text="Bienvenido a Servicios - Vuelos"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-
-                <ListView
-                    ItemsSource="{Binding Servicios}"
-                      SelectedItem="{Binding SelectedServicio}">
-                    <ListView.ItemTemplate>
+        <StackLayout Padding="10"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center">
+            <Label Text="NUESTROS VUELOS" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10"/>
+            <Frame BorderColor="Gray" CornerRadius="15" Padding="0">
+                <CarouselView x:Name="Carousel" IndicatorView="IndicatorView"
+                              HeightRequest="400"
+                              WidthRequest="260">
+                    <CarouselView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding pais}"
-                                  Detail="{Binding precio, StringFormat='Precio: {0:N2}'}"/>
+                            <RelativeLayout>
+                                <Image Source="{Binding pais}" Aspect="Fill"/>
+                                <Image Source="img_hearth.png" Aspect="AspectFit"
+                                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.85}"
+                                       RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=4}"
+                                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.12}"
+                                       RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.09}"/>
+                                
+                                <Label Text="{Binding destino}" FontSize="24" TextColor="White"
+                                       RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=15}"
+                                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.90}"/>
+                                
+                                <Label Text="{Binding precio}" FontSize="24" TextColor="White"
+                                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.65}"
+                                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.90}"/>
+                            </RelativeLayout>
                         </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-
-                <Button Text="Ver viaje"
-                    Command="{Binding GoToDetailsCommand}"
-                    CommandParameter="{x:Type local:ServicioDetallePage}"/>
-
-            </StackLayout>
-
-
-        </Grid>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+            </Frame>
+            <IndicatorView x:Name="IndicatorView"
+                           IndicatorColor="DarkGray"
+                           SelectedIndicatorColor="Gray"
+                           IndicatorSize="10"
+                           VerticalOptions="Center"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

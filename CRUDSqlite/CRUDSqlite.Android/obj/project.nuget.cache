@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "crWDp7Nks5UUxsAWl8sDSTKpDwx3TJP9pqATV3adHk45KqmPPnVGjvzq22Xf9KnbAwPAmPHcXD+TrD2bs44btg==",
+  "dgSpecHash": "y2IXt8A9ENly4Ro20DEZUoWMqMZyRa2bm8g+kXaDzPXTYvqC4lPexWaTn50oJK1RYqZM9EF55abpIkplZEpMew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Academico\\Desktop\\App\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.Android\\CRUDSqlite.Android.csproj",
+  "projectFilePath": "C:\\Users\\Academico\\Desktop\\app\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.Android\\CRUDSqlite.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Academico\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\Academico\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
@@ -83,7 +83,8 @@
     "C:\\Users\\Academico\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk7\\1.8.20.1\\xamarin.kotlin.stdlib.jdk7.1.8.20.1.nupkg.sha512",
     "C:\\Users\\Academico\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.8.20.1\\xamarin.kotlin.stdlib.jdk8.1.8.20.1.nupkg.sha512",
     "C:\\Users\\Academico\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.3\\xamarin.kotlinx.coroutines.android.1.6.4.3.nupkg.sha512",
-    "C:\\Users\\Academico\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.3\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.3.nupkg.sha512"
+    "C:\\Users\\Academico\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.3\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.3.nupkg.sha512",
+    "C:\\Users\\Academico\\.nuget\\packages\\xamd.plugins.forms.imagecarousel\\1.0.2\\xamd.plugins.forms.imagecarousel.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

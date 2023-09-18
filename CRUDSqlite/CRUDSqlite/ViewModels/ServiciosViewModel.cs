@@ -42,8 +42,8 @@ namespace CRUDSqlite.ViewModels
             set { _fechaPartida = value; OnPropertyChanged(); }
         }
 
-        private decimal _precio;
-        public decimal precio
+        private string _precio;
+        public string precio
         {
             get { return _precio; }
             //set { SetProperty(ref _precio, value); }
@@ -101,7 +101,7 @@ namespace CRUDSqlite.ViewModels
             pais = string.Empty;
             destino = string.Empty;
             fechaPartida = DateTime.MinValue;
-            precio = 0;
+            precio = "0";
             detalles = string.Empty;
             horaLlegada = DateTime.MinValue;
             fechaHoraPartida = DateTime.MinValue;

@@ -269,12 +269,35 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamd.Plugins.Forms.ImageCarousel/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "1.5.0.6446"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CRUDSqlite/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.8.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamd.Plugins.Forms.ImageCarousel": "1.0.2",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -553,12 +576,35 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamd.Plugins.Forms.ImageCarousel/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "1.5.0.6446"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CRUDSqlite/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.8.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamd.Plugins.Forms.ImageCarousel": "1.0.2",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -837,12 +883,35 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamd.Plugins.Forms.ImageCarousel/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "1.5.0.6446"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CRUDSqlite/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.8.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamd.Plugins.Forms.ImageCarousel": "1.0.2",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -1121,12 +1190,35 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamd.Plugins.Forms.ImageCarousel/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "1.5.0.6446"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CRUDSqlite/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.8.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamd.Plugins.Forms.ImageCarousel": "1.0.2",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -1405,12 +1497,35 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamd.Plugins.Forms.ImageCarousel/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "1.5.0.6446"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "related": ".xml"
+          },
+          "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CRUDSqlite/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.8.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamd.Plugins.Forms.ImageCarousel": "1.0.2",
           "sqlite-net-pcl": "1.8.116"
         },
         "compile": {
@@ -1858,6 +1973,30 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamd.Plugins.Forms.ImageCarousel/1.0.2": {
+      "sha512": "I0NVADzW3uNIjIvboATeeG26FT1SC1tEqUMz0JK0yTwf2BRZJt4QMX3u45j2LSWW9bW/u8kH96xDnYXCAce2NA==",
+      "type": "package",
+      "path": "xamd.plugins.forms.imagecarousel/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll",
+        "lib/MonoAndroid10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll.mdb",
+        "lib/MonoAndroid10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.xml",
+        "lib/MonoAndroid10/Xamd.ImageCarousel.Forms.Plugin.Droid.dll",
+        "lib/MonoAndroid10/Xamd.ImageCarousel.Forms.Plugin.Droid.dll.mdb",
+        "lib/MonoAndroid10/Xamd.ImageCarousel.Forms.Plugin.Droid.xml",
+        "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.xml",
+        "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.dll",
+        "lib/Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.iOS.xml",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll.mdb",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.xml",
+        "xamd.plugins.forms.imagecarousel.1.0.2.nupkg.sha512",
+        "xamd.plugins.forms.imagecarousel.nuspec"
+      ]
+    },
     "CRUDSqlite/1.0.0": {
       "type": "project",
       "path": "../CRUDSqlite/CRUDSqlite.csproj",
@@ -1879,11 +2018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Academico\\Desktop\\App\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.iOS\\CRUDSqlite.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Academico\\Desktop\\app\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.iOS\\CRUDSqlite.iOS.csproj",
       "projectName": "CRUDSqlite.iOS",
-      "projectPath": "C:\\Users\\Academico\\Desktop\\App\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.iOS\\CRUDSqlite.iOS.csproj",
+      "projectPath": "C:\\Users\\Academico\\Desktop\\app\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.iOS\\CRUDSqlite.iOS.csproj",
       "packagesPath": "C:\\Users\\Academico\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Academico\\Desktop\\App\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Academico\\Desktop\\app\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1904,8 +2043,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Academico\\Desktop\\App\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.csproj": {
-              "projectPath": "C:\\Users\\Academico\\Desktop\\App\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.csproj"
+            "C:\\Users\\Academico\\Desktop\\app\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.csproj": {
+              "projectPath": "C:\\Users\\Academico\\Desktop\\app\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.csproj"
             }
           }
         }

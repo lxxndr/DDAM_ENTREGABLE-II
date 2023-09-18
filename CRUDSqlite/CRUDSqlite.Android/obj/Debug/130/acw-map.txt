@@ -2977,3 +2977,9 @@ kotlinx.coroutines.flow.StateFlow;kotlinx.coroutines.flow.StateFlow
 Xamarin.KotlinX.Coroutines.Channels.IChannelIterator, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.ChannelIterator
 Xamarin.KotlinX.Coroutines.Channels.IChannelIterator;kotlinx.coroutines.channels.ChannelIterator
 kotlinx.coroutines.channels.ChannelIterator;kotlinx.coroutines.channels.ChannelIterator
+Xamd.ImageCarousel.Forms.Plugin.Droid.ImageCarouselRenderer, Xamd.ImageCarousel.Forms.Plugin.Droid;crc644a02debf0846b80a.ImageCarouselRenderer
+Xamd.ImageCarousel.Forms.Plugin.Droid.ImageCarouselRenderer;crc644a02debf0846b80a.ImageCarouselRenderer
+xamd.imagecarousel.forms.plugin.droid.ImageCarouselRenderer;crc644a02debf0846b80a.ImageCarouselRenderer
+Xamd.ImageCarousel.Forms.Plugin.Droid.ImageCarouselRenderer+GestureListener, Xamd.ImageCarousel.Forms.Plugin.Droid;crc644a02debf0846b80a.ImageCarouselRenderer_GestureListener
+Xamd.ImageCarousel.Forms.Plugin.Droid.ImageCarouselRenderer.GestureListener;crc644a02debf0846b80a.ImageCarouselRenderer_GestureListener
+xamd.imagecarousel.forms.plugin.droid.ImageCarouselRenderer_GestureListener;crc644a02debf0846b80a.ImageCarouselRenderer_GestureListener

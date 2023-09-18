@@ -83,6 +83,8 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Kotlin.StdLib.Jdk8.dll",
 		"Xamarin.KotlinX.Coroutines.Android.dll",
 		"Xamarin.KotlinX.Coroutines.Core.Jvm.dll",
+		"Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll",
+		"Xamd.ImageCarousel.Forms.Plugin.Droid.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

@@ -68,6 +68,7 @@ Xamarin.Jetbrains.Annotations.dll
 Xamarin.Kotlin.StdLib.dll
 Xamarin.KotlinX.Coroutines.Android.dll
 Xamarin.KotlinX.Coroutines.Core.Jvm.dll
+Xamd.ImageCarousel.Forms.Plugin.Droid.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.tracing.tracing.aar
 androidx.startup.startup-runtime.aar

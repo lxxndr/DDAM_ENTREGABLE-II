@@ -12,6 +12,7 @@
           "NETStandard.Library": "2.0.3",
           "Xamarin.Essentials": "1.8.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamd.Plugins.Forms.ImageCarousel": "1.0.2",
           "sqlite-net-pcl": "1.8.116"
         },
         "runtime": {
@@ -134,6 +135,17 @@
             "fileVersion": "5.0.0.993"
           }
         }
+      },
+      "Xamd.Plugins.Forms.ImageCarousel/1.0.2": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll": {
+            "assemblyVersion": "1.0.5745.25329",
+            "fileVersion": "1.0.5745.25329"
+          }
+        }
       }
     }
   },
@@ -233,6 +245,13 @@
       "sha512": "sha512-zQcy3NJgRJnLRWQZ2TZPCgDoTDHoYskHLutKDvz1pVNtvJ8U7kkg4mE2XATs3dAkQ+oWoqB4VOBGRk9uAfoRMw==",
       "path": "xamarin.forms/5.0.0.2612",
       "hashPath": "xamarin.forms.5.0.0.2612.nupkg.sha512"
+    },
+    "Xamd.Plugins.Forms.ImageCarousel/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I0NVADzW3uNIjIvboATeeG26FT1SC1tEqUMz0JK0yTwf2BRZJt4QMX3u45j2LSWW9bW/u8kH96xDnYXCAce2NA==",
+      "path": "xamd.plugins.forms.imagecarousel/1.0.2",
+      "hashPath": "xamd.plugins.forms.imagecarousel.1.0.2.nupkg.sha512"
     }
   }
 }

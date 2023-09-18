@@ -16,7 +16,7 @@ namespace CRUDSqlite.Models
         [MaxLength(100)]
         public DateTime fechaPartida { get; set; }
         [MaxLength(100)]
-        public decimal precio { get; set; }
+        public string precio { get; set; }
         [MaxLength(100)]
         public string detalles { get; set; }
         [MaxLength(100)]
