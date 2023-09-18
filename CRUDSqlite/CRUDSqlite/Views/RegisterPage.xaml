@@ -3,8 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CRUDSqlite.MainPage"
              BackgroundColor="Transparent">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackground" Value="White"/>
+                <Setter Property="BarTextColor" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
 
     <ContentPage.Content>
+ 
         <ScrollView>
             <Grid>
                 <Grid.Background>
@@ -15,26 +24,44 @@
                 </Grid.Background>
 
                 <StackLayout >
-                    <Image Source="skynet_back.png" Aspect="AspectFit" HeightRequest="305" WidthRequest="500"/>
 
-                    <Frame CornerRadius="0">
-                        <Label Text="Registrate en Skynet Travel" HorizontalTextAlignment="Center" TextColor="Black" FontSize="25"/>
-                    </Frame>
+                    <Image Source="skynet_back.png" Aspect="AspectFit" HeightRequest="306" WidthRequest="500" />
 
-                    <Entry x:Name="txtUsuario" Placeholder="Usuario"/>
-                    <Entry x:Name="txtNombre" Placeholder="Nombre real" />
-                    <Entry x:Name="txtApellidoPaterno" Placeholder="Apellido Paterno" />
-                    <Entry x:Name="txtApellidoMaterno" Placeholder="Apellido Materno" />
+                    <Label VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       FontSize="Large" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text=" Registrate en"  TextColor="Black" FontAttributes="Bold" FontSize="25" />
+                                <Span Text=" Skynet Travel"  TextColor="#FF9393" FontAttributes="Bold" FontSize="25"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text="DNI" Margin="70, 0, 70, 0" FontSize="15"/>
+                    <Entry x:Name="txtNumDocumento" Margin="70, -15, 70, 0" Placeholder="Ingresa tu documento de identidad"/>
 
-                    <Entry x:Name="txtFechNac" Placeholder="Fecha de Nacimiento" />
-                    <Entry x:Name="txtCelular" Placeholder="Celular" />
-                    <Entry x:Name="txtNumDocumento" Placeholder="N° Documento" />
+                    <Label Text="CORREO" Margin="70, 0, 70, 0" FontSize="15"/>
+                    <Entry x:Name="txtEmail" Margin="70, -15, 70, 0"  Placeholder="Email" />
 
-                    <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" />
-                    <Entry x:Name="txtCContraseña" Placeholder="Confirmar contraseña" IsPassword="True" />
+                    <Label Text="CELULAR" Margin="70, 0, 70, 0" FontSize="15"/>
+                    <Entry x:Name="txtCelular" Margin="70, -15, 70, 0"  Placeholder="Celular" />
 
-                    <Entry x:Name="txtEmail" Placeholder="Email" />
-                    <Button x:Name="btnRegistrar" Text="Registrarse" WidthRequest="144" CornerRadius="20"  Clicked="btnRegistrar_Clicked" />
+                    <Label Text="USUARIO" Margin="70, 0, 70, 0" FontSize="15"/>
+                    <Entry x:Name="txtUsuario" Margin="70, -15, 70, 0"  Placeholder="Ingresa tu usuario"/>
+
+                    <Label Text="CONTRASEÑA" Margin="70, 0, 70, 0" FontSize="15"/>
+                    <Entry x:Name="txtContraseña" Margin="70, -15, 70, 0" Placeholder="Contraseña" IsPassword="True" />
+
+                    <Label Text="USUARIO" Margin="70, 0, 70, 0" FontSize="15"/>
+                    <Entry x:Name="txtCContraseña" Margin="70, -15, 70, 0" Placeholder="Confirmar contraseña" IsPassword="True" />
+
+
+                    <Button x:Name="btnRegistrar" Text="Registrarse" Margin="70, 0, 70, 0" BackgroundColor="#FF9393" TextColor="White" FontSize="20" FontAttributes="Bold" CornerRadius="30"  Clicked="btnRegistrar_Clicked" />
 
                     <Label VerticalOptions="CenterAndExpand" 
                     HorizontalOptions="CenterAndExpand"
@@ -44,7 +71,7 @@
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="¿Si ya tienes cuenta? " />
-                                <Span Text="Inicia Sesión" TextColor="#FF9393" />
+                                <Span Text="Inicia Sesión" TextColor="#FF9393" FontAttributes="Bold" FontSize="15"/>
                             </FormattedString>
                         </Label.FormattedText>
                         <Label.GestureRecognizers>

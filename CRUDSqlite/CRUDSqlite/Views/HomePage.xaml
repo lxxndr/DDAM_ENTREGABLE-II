@@ -23,9 +23,11 @@
 
                 <Label Text="Eres pobre? ¡No te preocupes! En Skynet no te juzgamos y te damos viajes por todo el mundo al mejor precio."
                FontSize="Medium" />
-
-                <Button x:Name="btnServicios" Text="Ir a Servicios" CornerRadius="20"  Clicked="btnServicios_Clicked" />
-                <Button x:Name="btnPaquetes" Text="Ir a Paquetes" CornerRadius="20" Clicked="btnPaquetes_Clicked" IsEnabled="False" />
+                <StackLayout Margin="80,10,80,10">
+                    <Button x:Name="btnServicios" Text="Ir a Servicios" CornerRadius="20" Clicked="btnServicios_Clicked" />
+                    <Button x:Name="btnPaquetes" Text="Ir a Paquetes" CornerRadius="20" Clicked="btnPaquetes_Clicked" IsEnabled="False" />
+                </StackLayout>
+                
 
                 <Label Text="Para una mejor experiencia y para aprovechar todos los beneficios que te podemos brindar, puedes:" 
                FontSize="Medium" />
