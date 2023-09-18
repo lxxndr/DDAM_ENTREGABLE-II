@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDSqlite.Views.ServiciosContraseñaPage"
+             BackgroundColor="Transparent">
+    
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#FFA294" Offset="0.0" />
+                    <GradientStop Color="#FFC9C9" Offset="0.87" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <StackLayout>
+                <Label Text="Bienvenido a Atencion al Cliente!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+                <Label Text="Pasos para recuperar la contraseña:" 
+                   FontSize="Medium" 
+                   Margin="0,20,0,10" />
+
+                <Label Text="1. Haga clic en 'Recuperar Contraseña'." 
+                   FontSize="Medium" 
+                   Margin="0,0,0,10" />
+
+                <Label Text="2. Ingrese su dirección de correo electrónico." 
+                   FontSize="Medium" 
+                   Margin="0,0,0,10" />
+
+                <Label Text="3. Revise su bandeja de entrada para un correo electrónico con instrucciones de recuperación." 
+                   FontSize="Medium" 
+                   Margin="0,0,0,20" />
+
+                <Button Text="Recuperar Contraseña" 
+                    Command="{Binding RecoverPasswordCommand}" 
+                    VerticalOptions="CenterAndExpand" />
+
+                <Image Source="atencionCliente.jpg" 
+                       Aspect="AspectFill" 
+                       WidthRequest="300" HeightRequest="200" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
