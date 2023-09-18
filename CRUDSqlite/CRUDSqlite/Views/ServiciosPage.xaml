@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CRUDSqlite.Views"
              x:Class="CRUDSqlite.Views.ServiciosPage"
-             BackgroundColor="Transparent"
+             BackgroundColor="#FFA294"
              Title="SKYNET TRAVEL">
     <ContentPage.Content>
         <StackLayout Padding="10"

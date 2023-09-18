@@ -16,7 +16,8 @@ namespace CRUDSqlite
 		public LoginPage ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 
         private async void btnIniciar_Clicked(object sender, EventArgs e)
         {

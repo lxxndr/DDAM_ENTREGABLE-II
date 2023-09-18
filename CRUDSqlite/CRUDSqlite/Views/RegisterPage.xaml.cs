@@ -24,10 +24,6 @@ namespace CRUDSqlite
                 Registro registro = new Registro
                 {
                     usuario = txtUsuario.Text,
-                    nombre = txtNombre.Text,
-                    apellidoPaterno = txtApellidoPaterno.Text,
-                    apellidoMaterno = txtApellidoMaterno.Text,
-                    fechNacimiento = txtFechNac.Text,
                     celular = int.Parse(txtCelular.Text),
                     documento = txtNumDocumento.Text,
                     contraseña = txtContraseña.Text,
@@ -36,10 +32,6 @@ namespace CRUDSqlite
                 };
                 await App.SQLiteDB.SaveUsuarioAsync(registro);
                 txtUsuario.Text = "";
-                txtNombre.Text = "";
-                txtApellidoPaterno.Text = "";
-                txtApellidoMaterno.Text = "";
-                txtFechNac.Text = "";
                 txtNumDocumento.Text = "";
                 txtCelular.Text = "";
                 txtContraseña.Text = "";
@@ -69,18 +61,7 @@ namespace CRUDSqlite
             if (string.IsNullOrEmpty(txtUsuario.Text))
             {
                 respuesta = false;
-            }else if (string.IsNullOrEmpty(txtNombre.Text))
-            {
-                respuesta = false;
-            }else if (string.IsNullOrEmpty(txtApellidoPaterno.Text))
-            {
-                respuesta = false;
-            }else if (string.IsNullOrEmpty(txtApellidoMaterno.Text))
-            {
-                respuesta = false;
-            }else if (string.IsNullOrEmpty(txtFechNac.Text))
-            {
-                respuesta = false;
+            
             }else if (string.IsNullOrEmpty(txtCelular.Text))
             {
                 respuesta = false;
