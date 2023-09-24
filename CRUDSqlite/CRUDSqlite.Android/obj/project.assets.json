@@ -4561,24 +4561,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alexander\\.nuget\\packages\\": {},
+    "C:\\Users\\Dhenis\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexander\\Desktop\\Entregable 2\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite.Android\\CRUDSqlite.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Dhenis\\Desktop\\entregable02\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite.Android\\CRUDSqlite.Android.csproj",
       "projectName": "CRUDSqlite.Android",
-      "projectPath": "C:\\Users\\Alexander\\Desktop\\Entregable 2\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite.Android\\CRUDSqlite.Android.csproj",
-      "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexander\\Desktop\\Entregable 2\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite.Android\\obj\\",
+      "projectPath": "C:\\Users\\Dhenis\\Desktop\\entregable02\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite.Android\\CRUDSqlite.Android.csproj",
+      "packagesPath": "C:\\Users\\Dhenis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dhenis\\Desktop\\entregable02\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dhenis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4592,8 +4592,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\Alexander\\Desktop\\Entregable 2\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.csproj": {
-              "projectPath": "C:\\Users\\Alexander\\Desktop\\Entregable 2\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.csproj"
+            "C:\\Users\\Dhenis\\Desktop\\entregable02\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.csproj": {
+              "projectPath": "C:\\Users\\Dhenis\\Desktop\\entregable02\\App_EntityFramework\\CRUDSqlite\\CRUDSqlite\\CRUDSqlite.csproj"
             }
           }
         }

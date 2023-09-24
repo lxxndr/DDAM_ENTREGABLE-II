@@ -51,14 +51,13 @@ namespace CRUDSqlite
                 }
         }
 
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void btnServices(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ServiciosPage());
+        }
+        private async void btnRegister(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
-        }
-
-        private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync (new ServiciosContraseñaPage());
         }
     }
 }
