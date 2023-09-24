@@ -32,7 +32,7 @@ namespace CRUDSqlite
                     {
                         var nombreUsuarioLogeado = usuario.usuario;
                         
-                        await DisplayAlert("Inicio de sesion", "Inicio de seccion exitoso", "OK");
+                        await DisplayAlert("Inicio de sesión", "Inicio de sesión exitoso", "OK");
 
                         // Cambia la raizz de la app
                         Application.Current.MainPage = new NavigationPage(new HomePage(nombreUsuarioLogeado));

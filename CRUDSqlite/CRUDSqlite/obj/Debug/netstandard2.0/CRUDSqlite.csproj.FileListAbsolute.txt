@@ -42,3 +42,25 @@ C:\Users\Academico\Desktop\App\App_EntityFramework\CRUDSqlite\CRUDSqlite\CRUDSql
 C:\Users\Academico\Desktop\App\App_EntityFramework\CRUDSqlite\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.dll
 C:\Users\Academico\Desktop\App\App_EntityFramework\CRUDSqlite\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\refint\CRUDSqlite.dll
 C:\Users\Academico\Desktop\App\App_EntityFramework\CRUDSqlite\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.pdb
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\bin\Debug\netstandard2.0\CRUDSqlite.deps.json
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\bin\Debug\netstandard2.0\CRUDSqlite.dll
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\bin\Debug\netstandard2.0\ref\CRUDSqlite.dll
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\bin\Debug\netstandard2.0\CRUDSqlite.pdb
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.csproj.AssemblyReference.cache
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\Views\PaqueteDetallePage.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\Views\PaquetesPage.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\Views\ServicioDetallePage.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\Views\ServiciosContraseñaPage.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\Views\ServiciosPage.xaml.g.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.AssemblyInfoInputs.cache
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.AssemblyInfo.cs
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.dll
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\refint\CRUDSqlite.dll
+C:\Users\Alexander\Desktop\Entregable 2\App_EntityFramework\CRUDSqlite\CRUDSqlite\obj\Debug\netstandard2.0\CRUDSqlite.pdb

@@ -9,23 +9,15 @@ namespace CRUDSqlite.Models
     {
         [PrimaryKey, AutoIncrement]
         public int idUsuario { get; set; }
-        [MaxLength(100)]
+        [MaxLength(10)]
         public string usuario { get; set; }
-        [MaxLength(100)]
-        public string nombre { get; set; }
-        [MaxLength(100)]
-        public string apellidoPaterno { get; set; }
-        [MaxLength(100)]
-        public string apellidoMaterno { get; set; }
-        [MaxLength(100)]
-        public string fechNacimiento { get; set; }
-        [MaxLength(100)]
-        public string documento { get; set; } // opcional???
-        [MaxLength(100)]
-        public int celular { get; set; }
-        [MaxLength(9)]
-        public string contraseña { get; set; }
+        [MaxLength(50)]
+        public string documento { get; set; }
         [MaxLength(100)]
         public string email { get; set; }
-    }
+        [MaxLength(50)]
+        public string celular { get; set; }
+        [MaxLength(9)]
+        public string contraseña { get; set; }
+    } 
 }

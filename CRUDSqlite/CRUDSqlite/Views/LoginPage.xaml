@@ -44,11 +44,11 @@
                         </Label>
 
                         <Frame BackgroundColor="Transparent" CornerRadius="10" Padding="0" WidthRequest="272">
-                            <Entry x:Name="txtUsuario" Placeholder="🧝 Ingresa tu usuario" Style="{StaticResource EntryStyle}" Margin="10,10,10,2" HeightRequest="42" WidthRequest="272" HorizontalOptions="CenterAndExpand" BackgroundColor="White" />
+                            <Entry x:Name="txtUsuario" TextColor="black" Placeholder="🧝 Ingresa tu usuario" Style="{StaticResource EntryStyle}" Margin="10,10,10,2" HeightRequest="42" WidthRequest="272" HorizontalOptions="CenterAndExpand" BackgroundColor="White" />
                         </Frame>
 
                         <Frame BackgroundColor="Transparent"  CornerRadius="10" Padding="0" WidthRequest="272">
-                            <Entry x:Name="txtContraseña" Placeholder="🔒 Ingresa tu contraseña" IsPassword="True" Style="{StaticResource EntryStyle}" Margin="10,0,10,10"  HeightRequest="42" WidthRequest="272" HorizontalOptions="CenterAndExpand" BackgroundColor="White"/>
+                            <Entry x:Name="txtContraseña" TextColor="black" Placeholder="🔒 Ingresa tu contraseña" IsPassword="True" Style="{StaticResource EntryStyle}" Margin="10,0,10,10"  HeightRequest="42" WidthRequest="272" HorizontalOptions="CenterAndExpand" BackgroundColor="White"/>
                         </Frame>
 
                         <Frame BackgroundColor="Transparent" CornerRadius="10" Padding="0" WidthRequest="144">
@@ -70,22 +70,24 @@
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                             </Label.GestureRecognizers>
                         </Label>
-
-                        <Label Text="¿Olvidó su contraseña?"
-                       VerticalOptions="CenterAndExpand" 
+                        
+                        <Label VerticalOptions="CenterAndExpand" 
                         HorizontalOptions="CenterAndExpand"
                         HorizontalTextAlignment="Center"
                         VerticalTextAlignment="Center"
-                        TextColor="#FF9393"
                         FontSize="Large" >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Ingresa como " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                                    <Span Text="Invitado" TextColor="#FF9393" FontAttributes="Bold" FontSize="20"/>
+                                </FormattedString>
+                            </Label.FormattedText>
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                             </Label.GestureRecognizers>
                         </Label>
                     </StackLayout>
                 </Frame>
-
-
             </StackLayout>
         </Grid>
     </ContentPage.Content>
