@@ -6,18 +6,19 @@
              BackgroundColor="#FF9393"
              Title="SKYNET TRAVEL">
     <ContentPage.Content>
-        <StackLayout Padding="10"
+        <StackLayout Padding="70"
                      HorizontalOptions="Center"
                      VerticalOptions="Center">
-            <Label Text="NUESTROS VUELOS" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10"/>
+            <Label Text="Nuestros Vuelos" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center"/>
+            <Label Text="En Skynet Travel te ofrecemos lo mejor de lo mejor, por eso estos son nuestros vuelos recomendados para ti:" FontSize="15" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,10"/>
             <Frame BorderColor="Gray" CornerRadius="15" Padding="0">
                 <CarouselView x:Name="Carousel" IndicatorView="IndicatorView"
-                              HeightRequest="400"
+                              HeightRequest="500"
                               WidthRequest="260">
                     <CarouselView.ItemTemplate>
                         <DataTemplate>
                             <RelativeLayout>
-                                <Image Source="{Binding pais}" Aspect="Fill"/>
+                                <Image Source="{Binding pais}" Aspect="Fill" HeightRequest="500"/>
                                 <Image Source="img_hearth.png" Aspect="AspectFit"
                                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.85}"
                                        RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=4}"

@@ -21,14 +21,14 @@ namespace CRUDSqlite
 		}
 
         // Variables Login
-        private string nombreUsuarioLogeado = "Invitado";
+        private string nombreUsuarioLogeado = "Invitado!";
 
         // acceder al nombre usuario y cambiar label "Invitado" a "Usuario"
         public HomePage(string nombreUsuario)
         {
             InitializeComponent ();
             nombreUsuarioLogeado = nombreUsuario;
-            lblUsuario.Text = nombreUsuarioLogeado;
+            lblUsuario.Text = nombreUsuarioLogeado + "!";
 
             // Activar Paquetes :>
             if (!string.IsNullOrEmpty(nombreUsuarioLogeado))
@@ -68,7 +68,7 @@ namespace CRUDSqlite
 
         private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
-            lblUsuario.Text = "Invitado"; 
+            lblUsuario.Text = "Invitado!"; 
             lblDeslogearte.IsVisible = false;
             lblRegistro.IsVisible = true;
             lblTexto.IsVisible = true;

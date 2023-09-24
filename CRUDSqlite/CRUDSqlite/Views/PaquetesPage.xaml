@@ -6,35 +6,60 @@
              BackgroundColor="Transparent">
 
     <ContentPage.Content>
-        <Grid>
-            <Grid.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#FFA294" Offset="0.0" />
-                    <GradientStop Color="#FFC9C9" Offset="0.87" />
-                </LinearGradientBrush>
-            </Grid.Background>
-
-            <StackLayout Margin="10">
-                <Label Text="Bienvenido a Paquetes"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-
-                <ListView ItemsSource="{Binding Paquetes}"
-                      SelectedItem="{Binding SelectedPaquete}">
-                    <ListView.ItemTemplate>
+        <StackLayout Padding="70"
+             HorizontalOptions="Center"
+             VerticalOptions="Center">
+            <Label Text="Nuestros Paquetes" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center"/>
+            <Label Text="En Skynet Travel te ofrecemos lo mejor de lo mejor, por eso estos son nuestros paquetes recomendados para ti:" FontSize="15" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,10"/>
+            <Frame BorderColor="Gray" CornerRadius="15" Padding="0">
+                <CarouselView x:Name="Carousel" IndicatorView="IndicatorView"
+                      HeightRequest="500"
+                      WidthRequest="260">
+                    <CarouselView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding namePaqute}"
-                                  Detail="{Binding descripcionPaqute, StringFormat='Descripción: {0}'}"/>
+                            <RelativeLayout>
+                                <Image Source="{Binding pais}" Aspect="Fill" HeightRequest="500"/>
+                                <Image Source="img_hearth.png" Aspect="AspectFit"
+                               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.85}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=4}"
+                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.12}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.09}"/>
+
+                                <Label Text="{Binding local}" FontSize="30" TextColor="white" FontAttributes="Bold"
+                                RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=15}"
+                                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.01}"/>
+                                
+                                <Label Text="{Binding destino}" FontSize="24" TextColor="White"
+                               RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=15}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.08}"/>
+
+                                <Label Text="{Binding precio}" FontAttributes="Bold" FontSize="24" TextColor="White"
+                               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.70}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.90}"/>
+                            </RelativeLayout>
                         </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-
-
-                <Button Text="Ver detalles del paquete seleccionado"
-                    Command="{Binding GoToDetailsCommand}"
-                    CommandParameter="{x:Type local:PaqueteDetallePage}"/>
-
-            </StackLayout>
-        </Grid>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+            </Frame>
+            <IndicatorView x:Name="IndicatorView"
+                   IndicatorColor="DarkGray"
+                   SelectedIndicatorColor="Gray"
+                   IndicatorSize="10"
+                   VerticalOptions="Center"/>
+            <Button Text="Ver detalles" CornerRadius="20" Margin="0,20,0,0" 
+           FontSize="25" BackgroundColor="#CF7575" TextTransform="None" />
+            <Label VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            FontSize="Large" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Quieres algo simple? " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        <Span Text="Nuestros vuelos" TextColor="#FF9393" FontAttributes="Bold" FontSize="20"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

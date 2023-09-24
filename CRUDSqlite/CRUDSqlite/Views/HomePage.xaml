@@ -15,10 +15,21 @@
             </Grid.Background>
 
             <StackLayout VerticalOptions="CenterAndExpand" Padding="15">
+                <Label VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    FontSize="Large" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="¡Bienvenido " TextColor="White" FontAttributes="Bold" FontSize="30" />
+                            <Span x:Name="lblUsuario" Text="Invitado!" TextColor="White" FontAttributes="Bold" FontSize="30"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    
+                </Label>
 
-                <Label x:Name="lblUsuario" Text="Invitado" HorizontalTextAlignment="Center" FontSize="Large" />
-
-                <Label Text="Bienvenido a Skynet Travel" HorizontalTextAlignment="Center" FontSize="Large" />
+                <Label Text="Cumple tus sueños con Skyent Travel" HorizontalTextAlignment="Center" FontSize="Large" />
                 <Image Source="iconSkynet.png" Aspect="AspectFit" HeightRequest="240" />
 
                 <Label Text="Eres pobre? ¡No te preocupes! En Skynet no te juzgamos y te damos viajes por todo el mundo al mejor precio."

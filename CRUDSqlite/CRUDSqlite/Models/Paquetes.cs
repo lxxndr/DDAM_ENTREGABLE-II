@@ -10,18 +10,15 @@ namespace CRUDSqlite.Models
         [PrimaryKey, AutoIncrement]
         public int idPaquetes { get; set; }
         [MaxLength(100)]
-        public string namePaqute { get; set; }
+        public string destino { get; set; }
         [MaxLength(100)]
-        public string unoPaqute { get; set; }
+        public string local { get; set; }
+        [MaxLength(20)]
+        public string pais { get; set; }
         [MaxLength(100)]
-        public string dosPaqute { get; set; }
+        public string precio { get; set; }
         [MaxLength(100)]
-        public string tresPaqute { get; set; }
-        [MaxLength(100)]
-        public string fechaVenPaqute { get; set; }
-        [MaxLength(100)]
-        public string descripcionPaqute { get; set; }
-        [MaxLength(100)]
-        public string precioPaqute { get; set; }
+        public string dias { get; set; }
+        
     }
 }
